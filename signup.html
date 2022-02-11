@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sign up</title>
+        <style>
+            h1   {width: 320px;
+        background-color: lightyellow;
+  padding: 10px;
+  border: 5px solid rgb(194, 206, 29);
+  margin: 0;
+            }
+            .Neapolitan {
+  background-color: linear-gradient(to bottom, red 0%, red 33%, green 33%, green 66%, blue 66%, blue 100%);
+}
+        #ki {
+            width:120px;
+        background-color: rgb(252, 249, 106);
+  padding: 10px;
+  border: 5px solid rgb(194, 206, 29);
+  margin: 0;
+        }
+        #po{
+            width: 450px;
+        background-color: peachpuff;
+  padding: 10px;
+  border: 100px solid rgb(194, 206, 29);
+  margin: 0;
+        }
+        </style>
+         <script>
+                    function validate()
+                    {
+                        if(document.myform.Name.value=="")
+                        alert("U have left first name as blank")
+            if(document.myform.aName.value=="")
+                        alert("U have left last name as blank")
+            if(document.myform.ht.value!=document.myform.hty.value)
+                        alert("password is not matching!")
+             var emailID = document.myform.email.value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");
+         if (atpos < 1 || ( (dotpos - atpos) < 2 )) {
+            alert("Please enter correct email ID")
+             }
+
+                    }
+                    </script>
+            
+    </head>
+   
+    <body   style="background-color:red">
+        <br><br><br><br><br>
+       <center><div id='po'>
+        <center><div><h1><i>Sign up now!</i></h1></div></center>
+      
+      
+        <center>
+            <form name='myform' onsubmit="validate()">
+                <br><br><br>
+                <p><b>First name:</b>
+           <input type="text" name="Name"'/></center></p>
+           <center><p><b>Last name:</b>
+           <input type="text" name="aName"'/></center></p>
+           <center><b>Gender:</b></center>
+           <input type="radio" id="male" name="gender" value="male">
+           <label for="male">Male</label><br>
+           <input type="radio" id="female" name="gender" value="female">
+           <label for="female">Female</label><br>
+           <input type="radio" id="other" name="gender" value="other">
+           <label for="other">Other</label></br>
+          <b>Age:</b><br>
+           <input type="radio" id="male" name="gender" value="male">
+           <label for="male">15-30</label><br>
+           <input type="radio" id="female" name="gender" value="female">
+           <label for="female">30-45</label><br>
+           <input type="radio" id="other" name="gender" value="other">
+           <label for="other">45-60</label>
+           <center><p><b>G-mail:</b>
+            <input type="text" name="email"'/></center></p>
+        <b>Enrollment types:</b><br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> Healthy living</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> weight loss</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3">protien diet</label><br>
+           <center><p ><b>New Pasword:</b>
+            <input type="password" name="ht"/></center></p>
+            <center><p ><b>Reenter Pasword:</b>
+                <input type="password" name="hty" /></center></p>
+            <center><input type="submit" value="submit"/></center>
+        </form>
+            <center><a href='https://www.google.com/search?q=how+to+login&oq=how+to+login&aqs=chrome..69i57j0l6j69i60.5670j0j7&sourceid=chrome&ie=UTF-8'>?need help</a></center>
+           </div></center> 
+    </body>
+</html>
